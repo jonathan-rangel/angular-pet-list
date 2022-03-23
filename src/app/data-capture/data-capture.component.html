@@ -1,0 +1,19 @@
+<h1>Type the info of your pet</h1>
+
+<form action="">
+    <div class="input">
+        <label for="type">Type: </label>
+        <input type="text" name="type" [(ngModel)]="pet.type" placeholder="Dog or cat">
+    </div>
+    <div class="input">
+        <label for="age">Age: </label>
+        <input type="number" name="age" [(ngModel)]="pet.age" placeholder="Type the age">
+    </div>
+    <div class="input">
+        <label for="type">Breed: </label>
+        <input type="text" name="type" [(ngModel)]="pet.breed" placeholder="Type the breed">
+    </div>
+
+    <input type="submit" value="Save" (click)="savePet(pet)">
+
+</form>
